@@ -1,0 +1,7 @@
+id=ParadoxMods
+name=Xiaomi Mi5 Paradox-Thermal and Mods
+version=v34
+versionCode=034
+author=aka_vkl
+description=Fix CPU frequencies, GMS doze, framework boost, thermal-engine
+minMagisk=1600

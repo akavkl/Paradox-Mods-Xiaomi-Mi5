@@ -1,0 +1,317 @@
+#Audio
+persist.spkr.cal.duration=0
+alsa.mixer.playback.master=DAC1
+persist.audio.aanc.enable=true
+persist.audio.lowlatency.rec=true
+voice.playback.conc.disabled=true
+voice.record.conc.disabled=false
+voice.voip.conc.disabled=true
+voice.conc.fallbackpath=deep-buffer
+flac.sw.decoder.24bit.support=true
+audio.offload.buffer.size.kb=2256
+audio_hal.period_size=784
+audio.parser.ip.buffer.size=512640
+audio.playback.mch.downsample=false
+ro.qc.sdk.audio.fluencetype=fluencepro
+persist.audio.fluence.mode=broadside
+persist.audio.dualmic.config=broadside
+persist.audio.handset.mic=digital
+persist.audio.headset.mic=analog
+persist.audio.fluence.voicecall=true
+persist.audio.fluence.voicerec=false
+persist.audio.fluence.voicecomm=true
+persist.audio.fluence.speaker=true
+persist.audio.fluence.spk.mono=true
+persist.audio.fluence.audiorec=false
+persist.audio.voicecall.mic=0
+persist.audio.spkcall_2mic=OFF
+persist.audio.handset_rx_type=DEFAULT
+persist.audio.aanc.enable=true
+persist.audio.speaker.location=low
+persist.audio.hp=true
+audio.safx.pbe.enabled=true
+audio.pp.asphere.enabled=true
+audio.deep_buffer.media=true
+audio.offload.pcm.enable=true
+audio.offload.track.enabled=true
+audio.offload.16bit.enable=true
+audio.offload.24bit.enable=true
+audio.offload.32bit.enable=true
+audio.offload.disable=false
+audio.offload.enable=true
+audio.offload.multiple.enabled=true
+audio.offload.passthrough=true
+av.offload.enable=true
+av.streaming.offload.enable=true
+mm.enable.sec.smoothstreaming=true
+persist.mm.enable.prefetch=true
+ro.qc.sdk.audio.ssr=false
+persist.audio.aov=ON
+ro.ril.enable.amr.wideband=1
+audio.pp.asphere.enabled=true
+af.resampler.quality=255
+persist.af.resampler.quality=255
+pcm.channels=8
+persist.audio.SupportHTCHWAEC=1
+clock.allow_streaming_errors=false
+audio.converter.samplerate.libsamplerate.quality=best
+defaults.pcm.rate_converter=speexrate_best
+defaults.pcm.rate_converter=samplerate_best
+audio.offload.multiple.enabled=true
+audio.offload.gapless.enabled=true
+persist.audio.vr.enable=true
+persist.audio.voice.clarity=ON
+persist.audio.hifi_dac=ON
+hpx_send_params=1
+ro.config.hw_dts=true
+ro.config.hpx_support=true
+media.aac_51_output_enabled=true
+ro.dirac.config=16
+ro.dirac.afm.mode=global
+ro.dirac.acs.controller=afm
+persist.audio.DiracEnable=true
+persist.audio.dirac.speaker=true
+persist.audio.dirac.headset=7
+persist.audio.dirac.music.state=1
+persist.audio.ns.enabled=ON
+persist.audio.ssr.3mic=false
+persist.bt.enableAptXHD=true
+persist.bt.enableAptX=true
+bt.max.hfpclient.connections=1
+persist.bt.a2dp.aac_disable=true
+persist.bt.a2dp.aptx_disable=false
+persist.bt.a2dp.aptx_hd_disable=false
+persist.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac
+audio.legacy.postproc=true
+persist.audio.aov=ON
+mpq.audio.decode=true
+persist.audio.FFSP.enable=true 
+audio.nat.codec.enabled=true 
+persist.audio.hifi.int_codec=true 
+persist.audio.hifi.volume=1
+use.dts_eagle=true
+persist.headset.anc.type=feedback
+av.streaming.offload.enableoffload=true
+audio.offload.pcm.16bit.enable=true
+audio.offload.pcm.24bit.enable=true
+audio.offload.pcm.32bit.enable=true
+ro.config.vc_call_vol_steps=14
+ro.config.media_vol_steps=45
+audio.safemedia.bypass=true
+
+#Scroll
+
+persist.sys.scrollingcache=1
+
+# Ram Tweaks
+
+ro.config.fha_enable=true
+ro.sys.fw.bg_apps_limit=32
+ro.config.dha_cached_max=16
+ro.config.dha_empty_max=42
+ro.config.dha_empty_init=32
+ro.config.dha_lmk_scale=0.545
+ro.config.dha_th_rate=2.3
+ro.config.sdha_apps_bg_max=64
+ro.config.sdha_apps_bg_min=8
+
+#Call
+
+ro.telephony.call_ring.delay=0
+ro.lge.proximity.delay=5
+mot.proximity.delay=5
+
+
+#Camera2 API and tunings
+
+persist.camera.HAL3.enabled=1
+vidc.debug.perf.mode=2
+vidc.enc.dcvs.extra-buff-count=2
+persist.camera.llnoise=1
+persist.camera.tnr_cds=1
+persist.camera.tnr.snapshot=1
+persist.camera.tnr.video=1
+persist.camera.tnr.preview=1
+
+# zigzag hdr
+
+persist.camera.zzhdr.enable=1
+persist.camera.zzhdr.video=1
+persist.camera.eztune.enable=0
+persist.camera.fdvideo=1
+persist.camera.mem.usepool=1
+persist.camera.mem.usecache=5000000
+persist.camera.auto.hdr.enable=1
+persist.camera.tintless=1
+persist.camera.feature.cac=1
+persist.camera.eis.enable=1
+persist.denoise.process.plates=2
+persist.camera.longshot.stages=1
+persist.camera.facedetect=1
+persist.camera.snapshot.fd=1
+persist.camera.hal3hfr.enable=1
+persist.camera.ltmforseemore=1
+persist.camera.stats.af.paaf=1
+persist.camera.manual.capture=1
+
+# high temp? then lower fps (or frameskip)
+
+persist.camera.thermal.mode=fps
+persist.camera.opt.livepic=1
+
+#Low Power Audio and tunneling disable for HiFi processing 
+
+lpa.decode=false
+lpa.use-stagefright=false
+tunnel.decode=false
+tunnel.audiovideo.decode=false
+tunnel.audio.decode=false
+tunnel.audio.encode=false
+tunnel.decode=false
+tunnel.encode=false
+tunnel.multiple=false
+
+#NET and DNS Tweaks
+
+ro.ril.enable.dtm=1
+net.rmnet0.dns1=8.8.8.8
+net.rmnet0.dns2=8.8.4.4
+net.dns1=8.8.8.8
+net.dns2=8.8.4.4
+net.tcp.buffersize.default=4096,87380,256960,4096, 16384,256960
+net.tcp.buffersize.wifi=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.lte=524288,1048576,2097152,5242 88,1048576,2097152
+net.tcp.buffersize.hsdpa=6144,87380,1048576,6144,8 7380,1048576
+net.tcp.buffersize.hspa=6144,87380,524288,6144,163 84,262144
+net.tcp.buffersize.umts=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.edge=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.gprs=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.evdo_b=6144,87380,1048576,6144, 87380,1048576
+net.ipv4.tcp_ecn=0
+net.ipv4.route.flush=1
+net.ipv4.tcp_rfc1337=1
+net.ipv4.ip_no_pmtu_disc=0
+net.ipv4.tcp_sack=1
+net.ipv4.tcp_fack=1
+net.ipv4.tcp_window_scaling=1
+net.ipv4.tcp_timestamps=1
+net.ipv4.tcp_rmem=4096 39000 187000
+net.ipv4.tcp_wmem=4096 39000 187000
+net.ipv4.tcp_mem=187000 187000 187000
+net.ipv4.tcp_no_metrics_save=1
+net.ipv4.tcp_moderate_rcvbuf=1
+net.ipv6.tcp_ecn=0
+net.ipv6.route.flush=1
+net.ipv6.tcp_rfc1337=1
+net.ipv6.ip_no_pmtu_disc=0
+net.ipv6.tcp_sack=1
+net.ipv6.tcp_fack=1
+net.ipv6.tcp_window_scaling=1
+net.ipv6.tcp_timestamps=1
+net.ipv6.tcp_rmem=4096 39000 187000
+net.ipv6.tcp_wmem=4096 39000 187000
+net.ipv6.tcp_mem=187000 187000 187000
+net.ipv6.tcp_no_metrics_save=1
+net.ipv6.tcp_moderate_rcvbuf=1
+net.tethering.noprovisioning=true
+
+#Overall performance tweaks
+
+ro.HOME_APP_ADJ=1
+media.stagefright.enable-http=true
+media.stagefright.enable-player=true
+media.stagefright.enable-meta=true
+media.stagefright.enable-aac=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-scan=true
+media.stagefright.enable-record=true
+debug.composition.type=mdp
+
+#Power savings
+
+persist.sys.shutdown.mode=hibernate
+ro.config.hw_quickpoweron=true
+persist.radio.add_power_save=1
+persist.hvdcp.allow_opti=1
+ro.sys.fw.dex2oat_thread_count=2
+pm.sleep_mode=1
+wifi.supplicant_scan_interval=300
+persist.radio.add_power_save=1
+power_supply.wakeup=enable
+profiler.force_disable_ulog=true
+profiler.force_disable_err_rpt=true
+profiler.force_disable_err_rpt=1
+profiler.force_disable_ulog=1
+ro.ril.disable.power.collapse=0
+ro.ril.power_collapse=1
+dalvik.vm.dexopt-flags=m=v,o=y
+persist.sys.purgeable_assets=1
+ro.bluetooth.wipower=true
+perstist.power.usetwilightadj=true
+
+#Signal
+
+persist.cust.tel.eons=1
+ro.config.hw_fast_dormancy=1
+
+#GPU Tweaks
+
+ro.qc.sdk.camera.facialproc=true
+persist.sys.use_16bpp_alpha=1
+hwui.enable_vsync=true
+hwui.disable_vsync=false
+hw3d.force=1
+
+#Image Quality
+
+ro.media.dec.jpeg.memcap=16000000
+ro.media.enc.hprof.vid.bps=16000000
+ro.media.enc.hprof.vid.fps=60
+ro.media.enc.jpeg.quality=100
+ro.media.dec.aud.wma.enabled=1
+ro.media.dec.vid.wmv.enabled=1
+ro.media.cam.preview.fps=30
+ro.media.codec_priority_for_thumb=hw
+persist.sys.use_dithering=1
+ro.media.enc.jpeg.quality=100
+windowsmgr.max_events_per_sec=3000
+
+#Qualcomm specific
+
+debug.qc.hardware=true
+com.qc.hardware=true
+ro.qcom.ad=1
+ro.qcom.ad.calib.data=/system/etc/calib.cfg
+
+# Gaming Tweaks
+
+persist.sys.NV_FPSLIMIT=60
+persist.sys.NV_POWERMODE=1
+persist.sys.NV_PROFVER=15
+persist.sys.NV_STEREOCTRL=0
+persist.sys.NV_STEREOSEPCHG=0
+persist.sys.NV_STEREOSEP=30
+
+# END OOM_MEM_Settings
+
+#WiFi Calling
+persist.data.iwlan.enable=true
+persist.dbg.wfc_avail_ovr=1
+
+# Data Power Manager (DPM)
+persist.dpm.feature=7
+persist.env.fastdorm.enabled=true
+persist.sys.dpmd.nsrm=3
+
+# Dex2oat limits
+dalvik.vm.dex2oat-flags=--no-watch-dog
+dalvik.vm.boot-dex2oat-threads=8
+dalvik.vm.dex2oat-threads=4
+dalvik.vm.image-dex2oat-threads=2
+dalvik.vm.bg-dex2oat-threads=2
+
+#CPU Try
+ro.core_ctl_min_cpu=0
+
+#ARCore
+ro.config.calibration_cad=/system/etc/calibration_cad.xml

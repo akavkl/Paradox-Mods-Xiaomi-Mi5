@@ -1,0 +1,58 @@
+<!-- SoC based calibration for Qualcomm Devices-->
+<rig>
+  <device_id>0</device_id>
+  <camera>
+    <camera_model type="calibu_fu_fv_u0_v0_k1_k2_k3" index="0">
+      <rolling_shutter_readout_time>0.0326218</rolling_shutter_readout_time>
+      <rolling_shutter_direction>vertical</rolling_shutter_direction>
+      <height>480</height>
+      <width>640</width>
+      <params> [495.733883807343;  495.6676553008456;  315.4700278866147;  232.2707439173451;  0.1489241495201168;  -0.4417427288891008;  0.4067056789938272] </params>
+    </camera_model>
+  </camera>
+  <camera>
+    <camera_model type="calibu_fu_fv_u0_v0_k1_k2_k3" index="1">
+      <rolling_shutter_readout_time>0.0326218</rolling_shutter_readout_time>
+      <rolling_shutter_direction>vertical</rolling_shutter_direction>
+      <height>1080</height>
+      <width>1920</width>
+      <params> [1487.199;  1487.001;  946.410;  516.813;   0.1489241495201168;  -0.4417427288891008;  0.4067056789938272] </params>
+    </camera_model>
+  </camera>
+  <camera>
+    <camera_model type="calibu_fu_fv_u0_v0_k1_k2_k3" index="3">
+      <rolling_shutter_readout_time>0.0326218</rolling_shutter_readout_time>
+      <rolling_shutter_direction>vertical</rolling_shutter_direction>
+      <height>1080</height>
+      <width>1920</width>
+      <params> [1487.199;  1487.001;  946.410;  516.813;   0.1489241495201168;  -0.4417427288891008;  0.4067056789938272] </params>
+    </camera_model>
+  </camera>
+  <intrinsic_imu_calibration name="" imu_id="100" type="linear_imu_sg_mg_sa_ma_gqa">
+    <b_w_b_a> [0.002358463772260724;  0.001809926290445352;  0.001591088205025581;  -0.02611307672906278;  -0.1105770734858414;  0.1079185441646273] </b_w_b_a>
+    <intrinsics> [1.005704361068297;  1.026189925411079;  1.002831637595448;  0.004578144716975105;  -0.001848050570252286;  -0.00296183013855017;  1.005412424479319;  1.005207929570434;  1.003552846073736;  -0.001463114802064685;  0.003828624926299869;  0.006517712743266594;  0.003935646301693438;  -0.0006195812757256409;  0.00100949438688012;  0.9999915538284879] </intrinsics>
+    <gyro_noise_sigma>0.00053088444</gyro_noise_sigma>
+    <gyro_bias_sigma>0.00014125375</gyro_bias_sigma>
+    <accel_noise_sigma>0.0048836490000000003</accel_noise_sigma>
+    <accel_bias_sigma>0.012589253999999999</accel_bias_sigma>
+  </intrinsic_imu_calibration>
+  <extrinsic_calibration frame_A_id="100" frame_B_id="0">
+    <A_q_B> [0.9999746586281442;  0.003360637612160365;  0.001244938818470699;  0.006151287971202581] </A_q_B>
+    <A_p_B> [-0.008444988606901198;  -0.01026446351033551;  0.001590749156925719] </A_p_B>
+  </extrinsic_calibration>
+  <extrinsic_calibration frame_A_id="100" frame_B_id="1">
+    <A_q_B> [0.9999746586281442;  0.003360637612160365;  0.001244938818470699;  0.006151287971202581] </A_q_B>
+    <A_p_B> [-0.008444988606901198;  -0.01026446351033551;  0.001590749156925719] </A_p_B>
+  </extrinsic_calibration>
+  <extrinsic_calibration frame_A_id="100" frame_B_id="3">
+    <A_q_B> [0.9999746586281442;  0.003360637612160365;  0.001244938818470699;  0.006151287971202581] </A_q_B>
+    <A_p_B> [-0.008444988606901198;  -0.01026446351033551;  0.001590749156925719] </A_p_B>
+  </extrinsic_calibration>
+
+  <extrinsic_calibration name="Device_T_OpenGl" index="0" frame_A_id="40" frame_B_id="42">
+    <A_T_B> [0, 1, 0, 0;  -1, 0, 0, 0;  0, 0, 1, 0] </A_T_B>
+  </extrinsic_calibration>
+  <extrinsic_calibration name="Imu_T_Device" index="0" frame_A_id="100" frame_B_id="40">
+    <A_T_B> [0, -1, 0, 0;  1, 0, 0, 0;  0, 0, 1, 0] </A_T_B>
+  </extrinsic_calibration>
+</rig>
